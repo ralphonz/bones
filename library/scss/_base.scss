@@ -11,9 +11,9 @@ and will be used across all viewports.
 
 ******************************************************************/
 
-/*********************
-GENERAL STYLES
-*********************/
+/***************************/
+/* @group  GENERAL STYLES  */
+/***************************/
 
 body {
 	font-family: $serif;
@@ -21,11 +21,12 @@ body {
 	line-height: 1.5;
 	color: #565656;
 }
+/* @end */
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
+/*********************************/
+/* @group WORDPRESS BODY CLASSES */
+/* 	  style a page via class 	 */
+/*********************************/
 
 .rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
 .home {}                          /* home page */
@@ -62,19 +63,21 @@ style a page via class
 .logged-in {}                     /* if user is logged in */
 .paged {}                         /* paged items like search results or archives */
 	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
+/* @end */
 
-/*********************
-LAYOUT & GRID STYLES
-*********************/
+/*******************************/
+/* @group LAYOUT & GRID STYLES */
+/*******************************/
 
 .wrap {
 	width: 96%;
 	margin: 0 auto;
 }
+/* @end */
 
-/*********************
-LINK STYLES
-*********************/
+/**********************/
+/* @group LINK STYLES */
+/**********************/
 
 a, a:visited {
 	color: $link-color;
@@ -99,10 +102,11 @@ a, a:visited {
 		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
 	}
 }
+/* @end */
 
-/******************************************************************
-H1, H2, H3, H4, H5 STYLES
-******************************************************************/
+/************************************/
+/* @group H1, H2, H3, H4, H5 STYLES */
+/************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $sans-serif;
@@ -145,18 +149,20 @@ h5, .h5 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
+/* @end */
 
-/*********************
-HEADER STYLES
-*********************/
+/************************/
+/* @group HEADER STYLES */
+/************************/
 
 .header {}
 
 	#logo {}
+/* @end */
 
-/*********************
-NAVIGATION STYLES
-*********************/
+/****************************/
+/* @group NAVIGATION STYLES */
+/****************************/
 
 /*
 all navs have a .nav class applied via
@@ -236,11 +242,11 @@ and more scalable.
 	}  /* end current highlighters */
 
 } /* end .nav */
+/* @end */
 
-
-/*********************
-POSTS & CONTENT STYLES
-*********************/
+/*********************************/
+/* @group POSTS & CONTENT STYLES */
+/*********************************/
 
 #content {
 	margin-top: 2.2em;
@@ -396,10 +402,11 @@ POSTS & CONTENT STYLES
 		.size-large {}
 		.size-medium {}
 		.size-thumbnail {}
+/* @end */
 
-/******************************************************************
-PAGE NAVI STYLES
-******************************************************************/
+/***************************/
+/* @group PAGE NAVI STYLES */
+/***************************/
 
 .pagination,
 .wp-prev-next {
@@ -454,10 +461,11 @@ PAGE NAVI STYLES
 		}
 
 	} /* end .wp-prev-next */
+/* @end */
 
-/******************************************************************
-COMMENT STYLES
-******************************************************************/
+/*************************/
+/* @group COMMENT STYLES */
+/*************************/
 
 /* h3 comment title */
 #comments {
@@ -634,10 +642,11 @@ COMMENT STYLES
 	} /* end .commentlist .comment-reply-link */
 
 } /* end .commentlist */
+/* @end */
 
-/******************************************************************
-COMMENT FORM STYLES
-******************************************************************/
+/******************************/
+/* @group COMMENT FORM STYLES */
+/******************************/
 
 .respond-form {
 	margin: 1.5em 10px;
@@ -723,10 +732,11 @@ COMMENT FORM STYLES
 	.nocomments {
 		margin: 0 20px 1.1em;
 	}
+/* @end */
 
-/*********************
-SIDEBARS & ASIDES
-*********************/
+/****************************/
+/* @group SIDEBARS & ASIDES */
+/****************************/
 
 .sidebar {}
 
@@ -752,10 +762,11 @@ SIDEBARS & ASIDES
 		}
 
 	}
+/* @end */
 
-/*********************
-FOOTER STYLES
-*********************/
+/************************/
+/* @group FOOTER STYLES */
+/************************/
 
 .footer {
 	clear: both;
@@ -783,3 +794,4 @@ FOOTER STYLES
 
 	.copyright {}
 
+/* @end */

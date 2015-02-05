@@ -13,31 +13,34 @@ come into play. Have fun!
 ******************************************************************/
 
 
-/*********************
-GENERAL STYLES
-*********************/
+/*************************/
+/* @group GENERAL STYLES */
+/*************************/
 
 body {}
+/* @end */
 
-/*********************
-LAYOUT & GRID STYLES
-*********************/
+/*******************************/
+/* @group LAYOUT & GRID STYLES */
+/*******************************/
 
 .wrap {
 	max-width: 1140px;
 }
+/* @end */
 
-/*********************
-HEADER STYLES
-*********************/
+/************************/
+/* @group HEADER STYLES */
+/************************/
 
 .header {}
 
 	#logo {}
+/* @end */
 
-/*********************
-NAVIGATION STYLES
-*********************/
+/****************************/
+/* @group NAVIGATION STYLES */
+/****************************/
 
 .nav {
 	background: #eee;
@@ -134,10 +137,11 @@ NAVIGATION STYLES
 	}  /* end current highlighters */
 
 } /* end .nav */
+/* @end */
 
-/*********************
-SIDEBARS & ASIDES
-*********************/
+/****************************/
+/* @group SIDEBARS & ASIDES */
+/****************************/
 
 .sidebar {
 	margin-top: 2.2em;
@@ -256,11 +260,11 @@ SIDEBARS & ASIDES
 	.textwidget {}
 	.widget_text {}
 	.textwidget p {}
+/* @end */
 
-
-/*********************
-FOOTER STYLES
-*********************/
+/************************/
+/* @group FOOTER STYLES */
+/************************/
 
 /*
 you'll probably need to do quite a bit
@@ -282,4 +286,4 @@ mobile. Make sure to double check these!
 		}
 	}
 } /* end .footer-links */
-
+/* @end */

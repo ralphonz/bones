@@ -15,9 +15,9 @@ remember less is more.
 
 ******************************************************************/
 
-/*********************
-CLEARFIXIN'
-*********************/
+/**********************/
+/* @group CLEARFIXIN' */
+/**********************/
 
 // Contain floats: nicolasgallagher.com/micro-clearfix-hack/
 .clearfix {
@@ -25,10 +25,11 @@ CLEARFIXIN'
 	&:before, &:after { content: ""; display: table; }
 	&:after { clear: both; }
 }
+/* @end */
 
-/*********************
-TOOLS
-*********************/
+/****************/
+/* @group TOOLS */
+/****************/
 
 // BORDER-BOX ALL THE THINGS! (http://paulirish.com/2012/box-sizing-border-box-ftw/)
 * {
@@ -43,13 +44,13 @@ TOOLS
 	white-space: nowrap;
 	overflow: hidden;
 }
+/* @end */
 
-
-/*********************
-COLORS
-Need help w/ choosing your colors? Try this site out:
-http://0to255.com/
-*********************/
+/*********************************************************/
+/* @group COLORS 										 */
+/* Need help w/ choosing your colors? Try this site out: */
+/* http://0to255.com/									 */
+/*********************************************************/
 
 $alert-yellow:      #ebe16f;
 $alert-red:         #fbe3e4;
@@ -70,11 +71,11 @@ Here's a great tutorial on how to
 use color variables properly:
 http://sachagreif.com/sass-color-variables/
 */
+/* @end */
 
-
-/*********************
-TYPOGRAPHY
-*********************/
+/*********************/
+/* @group TYPOGRAPHY */
+/*********************/
 
 $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif:             "Georgia", Cambria, Times New Roman, Times, serif;
@@ -109,13 +110,13 @@ span.amp {
   font-style: italic;
 }
 
-// text alignment
+/* text alignment */
 .text-left   { text-align: left; }
 .text-center { text-align: center; }
 .text-right  { text-align: right; }
 
 
-// alerts and notices
+/* alerts and notices */
 %alert {
 	margin: 10px;
 	padding: 5px 18px;
@@ -145,10 +146,11 @@ span.amp {
 	border-color: darken($alert-green, 5%);
 	background: $alert-green;
 }
+/* @end */
 
-/*********************
-TRANSITION
-*********************/
+/*********************/
+/* @group TRANSITION */
+/*********************/
 
 /*
 I totally rewrote this to be cleaner and easier to use.
@@ -166,12 +168,13 @@ USAGE: @include transition(all 0.2s ease-in-out);
 
   transition: $transition;
 }
+/* @end */
 
-/*********************
-CSS3 GRADIENTS
-Be careful with these since they can
-really slow down your CSS. Don't overdo it.
-*********************/
+/***********************************************/
+/* @group CSS3 GRADIENTS 				       */
+/* Be careful with these since they can	       */
+/* really slow down your CSS. Don't overdo it. */
+/***********************************************/
 
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
 @mixin css-gradient($from: #dfdfdf, $to: #f8f8f8) {
@@ -182,10 +185,11 @@ really slow down your CSS. Don't overdo it.
 	background-image: -o-linear-gradient(top, $from, $to);
 	background-image: linear-gradient(to bottom, $from, $to);
 }
+/* @end */
 
-/*********************
-BOX SIZING
-*********************/
+/*********************/
+/* @group BOX SIZING */
+/*********************/
 
 /* @include box-sizing(border-box); */
 /* NOTE: value of "padding-box" is only supported in Gecko. So
@@ -196,11 +200,11 @@ probably best not to use it. I mean, were you going to anyway? */
 	-ms-box-sizing:     $type;
 	box-sizing:         $type;
 }
+/* @end */
 
-
-/*********************
-BUTTONS
-*********************/
+/******************/
+/* @group BUTTONS */
+/******************/
 
 .button, .button:visited {
 	font-family: $sans-serif;
@@ -248,3 +252,4 @@ BUTTONS
 		@include css-gradient( darken($bones-blue, 5%), $bones-blue );
 	}
 }
+/* @end */
